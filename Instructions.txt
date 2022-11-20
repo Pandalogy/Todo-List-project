@@ -1,4 +1,4 @@
-1. Download .side file from Git
+1. Download .side file from Github
 2. Install Selenium IDE for Firefox
 3. Open Selenium IDE for Firefox
 4. Open .side Project Selenium IDE
