@@ -2,4 +2,5 @@
 2. Install Selenium IDE for Firefox
 3. Open Selenium IDE for Firefox
 4. Open .side Project Selenium IDE
-5. Run all test (Ctrl+Shift+R)
+5. Note to have Github account already login for Todo List site
+6. Run all test (Ctrl+Shift+R)
