@@ -3580,7 +3580,7 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["192ba8b6-83f2-4939-876a-5830458e7207"]
+    "tests": []
   }],
   "urls": ["https://todo-list-login.firebaseapp.com/", "https://todo-list-login.firebaseapp.com/#!"],
   "plugins": []
