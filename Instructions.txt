@@ -1,0 +1,5 @@
+1. Download .side file from Git
+2. Install Selenium IDE for Firefox
+3. Open Selenium IDE for Firefox
+4. Open .side Project Selenium IDE
+5. Run all test (Ctrl+Shift+R)
