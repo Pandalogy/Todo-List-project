@@ -5,7 +5,7 @@
   "url": "https://todo-list-login.firebaseapp.com/#!",
   "tests": [{
     "id": "192ba8b6-83f2-4939-876a-5830458e7207",
-    "name": "2_Create_test_list1",
+    "name": "2_Create_1_list1",
     "commands": [{
       "id": "d111238f-13a6-459b-8b6d-caa96be6bcc7",
       "comment": "",
@@ -240,6 +240,13 @@
       ],
       "value": ""
     }, {
+      "id": "b69e2b52-f796-482c-ad9b-6d2be0ecff7c",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "500"
+    }, {
       "id": "e97303eb-7c29-410d-843a-468af8c70250",
       "comment": "",
       "command": "close",
@@ -258,7 +265,7 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "c320a9ff-6a34-4167-90eb-08a290ae1de3",
+      "id": "2c075516-cc74-4500-b51b-70b4dba32993",
       "comment": "",
       "command": "pause",
       "target": "",
@@ -303,31 +310,17 @@
       "windowHandleName": "win4818",
       "windowTimeout": 2000
     }, {
-      "id": "d8d6e0cf-b230-4389-a687-478ded5ccca4",
+      "id": "c320a9ff-6a34-4167-90eb-08a290ae1de3",
       "comment": "",
-      "command": "storeWindowHandle",
-      "target": "root",
+      "command": "pause",
+      "target": "",
       "targets": [],
-      "value": ""
+      "value": "2000"
     }, {
-      "id": "728b202c-657d-4661-9af0-c9ede6d3a734",
-      "comment": "",
-      "command": "selectWindow",
-      "target": "handle=${win4818}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "5a121bfc-e255-4d0d-9a76-e6c1f46567aa",
+      "id": "b6387f96-76b8-447e-969f-f95a821d1194",
       "comment": "",
       "command": "close",
       "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "249211ee-7027-4120-ac9f-f48198988cc7",
-      "comment": "",
-      "command": "selectWindow",
-      "target": "handle=${root}",
       "targets": [],
       "value": ""
     }]
@@ -611,6 +604,13 @@
       ],
       "value": ""
     }, {
+      "id": "b1c49128-8262-4ae5-be93-b8af8bf5d7f1",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "500"
+    }, {
       "id": "2a3a55e4-f9ed-4c14-9e1d-5e2ffef6269d",
       "comment": "",
       "command": "close",
@@ -854,6 +854,13 @@
         ["xpath=//button[contains(.,' Add Task')]", "xpath:innerText"]
       ],
       "value": ""
+    }, {
+      "id": "c97ca6d1-04a2-4c79-b243-98abc74df0f1",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "500"
     }, {
       "id": "98ab24c1-0917-4719-8af2-c09df00f6e5d",
       "comment": "",
@@ -1099,6 +1106,13 @@
       ],
       "value": ""
     }, {
+      "id": "78cccc11-fd30-4bb8-bd95-f1806fdf4c6a",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "500"
+    }, {
       "id": "dabc921b-656a-4d8b-a902-fb02d95bdb17",
       "comment": "",
       "command": "close",
@@ -1342,6 +1356,13 @@
         ["xpath=//button[contains(.,' Add Task')]", "xpath:innerText"]
       ],
       "value": ""
+    }, {
+      "id": "17731089-3999-4814-8dea-10ca3eb56a1b",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "500"
     }, {
       "id": "eeee2a6a-3ab5-46ce-9269-19b622622357",
       "comment": "",
@@ -1587,6 +1608,13 @@
       ],
       "value": ""
     }, {
+      "id": "eaf2bab0-9ae4-4028-8ba9-e6a72e5a05da",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "500"
+    }, {
       "id": "f5cd0cf7-40f6-45e0-9a21-7f6f7e11d386",
       "comment": "",
       "command": "close",
@@ -1830,6 +1858,13 @@
         ["xpath=//button[contains(.,' Add Task')]", "xpath:innerText"]
       ],
       "value": ""
+    }, {
+      "id": "787d45d9-ba8c-4784-bae9-dcccdf64ada6",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "500"
     }, {
       "id": "93dca75f-652e-439e-86ef-c582729e8f0c",
       "comment": "",
@@ -2075,6 +2110,13 @@
       ],
       "value": ""
     }, {
+      "id": "d7616392-69f0-428e-803d-7b7024e195db",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "500"
+    }, {
       "id": "9747b553-154a-4b6a-abee-5b2f2be2f463",
       "comment": "",
       "command": "close",
@@ -2318,6 +2360,13 @@
         ["xpath=//button[contains(.,' Add Task')]", "xpath:innerText"]
       ],
       "value": ""
+    }, {
+      "id": "2db98886-0ad2-4ea3-8731-9ffcd92bb03a",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "500"
     }, {
       "id": "e39bee49-11a6-475d-9367-ab5ebaab15cd",
       "comment": "",
@@ -2678,6 +2727,13 @@
       ],
       "value": ""
     }, {
+      "id": "e75762c2-5e8f-487c-81b9-99f3c6349ca4",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "500"
+    }, {
       "id": "3c5f144c-d538-431f-9c26-7e3b2d355b2a",
       "comment": "",
       "command": "close",
@@ -2716,6 +2772,13 @@
         ["xpath=//a[contains(.,'update List')]", "xpath:innerText"]
       ],
       "value": ""
+    }, {
+      "id": "2750a199-48b8-489a-b1db-b9e167ba37b5",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.list-group-item:nth-child(1) .btn-danger",
+      "targets": [],
+      "value": "5000"
     }, {
       "id": "7dd74b76-6b8e-4428-893c-fced07bb9bbc",
       "comment": "",
@@ -2826,6 +2889,13 @@
       ],
       "value": ""
     }, {
+      "id": "d829bf62-39e1-49e6-872e-e4f08a1ea2c7",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "500"
+    }, {
       "id": "26414d38-6c83-4b4c-9cb9-31f7b518fbbe",
       "comment": "",
       "command": "close",
@@ -2864,6 +2934,13 @@
         ["xpath=//a[contains(.,'update List')]", "xpath:innerText"]
       ],
       "value": ""
+    }, {
+      "id": "3289243d-0d1c-479d-a722-86fbdc501476",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.list-group-item:nth-child(1) .btn-danger",
+      "targets": [],
+      "value": "5000"
     }, {
       "id": "30125b8b-3c3e-45b2-abd2-3a97d988a968",
       "comment": "",
@@ -2974,6 +3051,13 @@
       ],
       "value": ""
     }, {
+      "id": "c2b9e7f8-f095-4832-acea-7c0be6c9bd78",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "500"
+    }, {
       "id": "c0432e10-2209-4749-b559-7a53af30f1f1",
       "comment": "",
       "command": "close",
@@ -3012,6 +3096,13 @@
         ["xpath=//a[contains(.,'update List')]", "xpath:innerText"]
       ],
       "value": ""
+    }, {
+      "id": "1420a405-a6ca-4df8-a91c-7277d6bdafe5",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.list-group-item:nth-child(1) .btn-danger",
+      "targets": [],
+      "value": "5000"
     }, {
       "id": "896bd657-3dda-42ee-b3f4-0908d936fce6",
       "comment": "",
@@ -3122,6 +3213,13 @@
       ],
       "value": ""
     }, {
+      "id": "c4d4b55b-47f5-457f-931d-fc3a60afebbd",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "500"
+    }, {
       "id": "ccc0d74e-2022-4751-a035-53433e9e095a",
       "comment": "",
       "command": "close",
@@ -3160,6 +3258,13 @@
         ["xpath=//a[contains(.,'update List')]", "xpath:innerText"]
       ],
       "value": ""
+    }, {
+      "id": "4a0dad8e-6ab4-40a3-bc4e-2e7722eb3501",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.list-group-item:nth-child(1) .btn-danger",
+      "targets": [],
+      "value": "5000"
     }, {
       "id": "aa5c0aa5-0e38-4625-bf9d-72640fe44b96",
       "comment": "",
@@ -3270,6 +3375,13 @@
       ],
       "value": ""
     }, {
+      "id": "22936b36-bc62-4471-9345-4d7dbd996fd5",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "500"
+    }, {
       "id": "1df89549-6937-454a-8617-2eb65c63029b",
       "comment": "",
       "command": "close",
@@ -3308,6 +3420,13 @@
         ["xpath=//a[contains(.,'update List')]", "xpath:innerText"]
       ],
       "value": ""
+    }, {
+      "id": "f69bfa3f-4afc-4125-878c-78b6cb6cfb6b",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.list-group-item:nth-child(1) .btn-danger",
+      "targets": [],
+      "value": "5000"
     }, {
       "id": "f050b2da-43aa-40c3-84d0-df53a96f96bb",
       "comment": "",
@@ -3418,6 +3537,13 @@
       ],
       "value": ""
     }, {
+      "id": "42209c1b-94e0-439f-86cc-e0771d466041",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "500"
+    }, {
       "id": "2a953354-ebf8-441b-84f4-d1ae1ab962af",
       "comment": "",
       "command": "close",
@@ -3456,6 +3582,13 @@
         ["xpath=//a[contains(.,'update List')]", "xpath:innerText"]
       ],
       "value": ""
+    }, {
+      "id": "df2088cf-f8cb-4af9-a628-94e9bb6ab31d",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.list-group-item:nth-child(1) .btn-danger",
+      "targets": [],
+      "value": "5000"
     }, {
       "id": "df478067-849b-4a0e-97bf-eb7fe20b9b8c",
       "comment": "",
@@ -3566,7 +3699,662 @@
       ],
       "value": ""
     }, {
+      "id": "0f7c7b15-b064-4064-b91c-a1e98237f616",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "500"
+    }, {
       "id": "b6b445d5-551f-4ac4-a143-965ea84b87da",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "aa03c4d9-c950-4081-bb22-7a73023d57cf",
+    "name": "20_Delete_list_1",
+    "commands": [{
+      "id": "597e6dce-41c8-4e6c-8eb5-09f0ed35fe9c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dc494a95-5c97-4207-82b5-84cfd47a846a",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.btn-success",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "aa5b280f-56cd-431a-88fb-d1687167288a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=1 List",
+      "targets": [
+        ["linkText=update List", "linkText"],
+        ["css=.disney1:nth-child(1) .ng-binding", "css:finder"],
+        ["xpath=//a[contains(text(),'update List')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#!/list/update')]", "xpath:href"],
+        ["xpath=//li/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'update List')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bdf09cb9-85d7-4193-bb33-cea1c4929be6",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.list-group-item:nth-child(1) .btn-danger",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "b692a5f2-6541-4ad9-bdf5-2304fdbcc3b4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-group-item:nth-child(1) .btn-danger",
+      "targets": [
+        ["css=.list-group-item:nth-child(1) .btn-danger", "css:finder"],
+        ["xpath=//div[5]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f73cce2a-5bee-4120-ba14-2900157cc343",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-group-item:nth-child(1) .btn-danger",
+      "targets": [
+        ["css=.list-group-item:nth-child(1) .btn-danger", "css:finder"],
+        ["xpath=//div[5]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39b0976e-47c9-4054-89b9-593007aa80ac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-group-item:nth-child(1) .btn-danger",
+      "targets": [
+        ["css=.list-group-item:nth-child(1) .btn-danger", "css:finder"],
+        ["xpath=//div[5]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9656121-272c-4d3f-b828-cfcec7bfdcc5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-group-item:nth-child(1) .btn-danger",
+      "targets": [
+        ["css=.list-group-item:nth-child(1) .btn-danger", "css:finder"],
+        ["xpath=//div[5]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "66c2071e-861d-4003-8e39-e625db1aafdd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-group-item:nth-child(1) .btn-danger",
+      "targets": [
+        ["css=.list-group-item:nth-child(1) .btn-danger", "css:finder"],
+        ["xpath=//div[5]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6251a1e1-f68f-40f5-be7f-1df8a215caed",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Todo App",
+      "targets": [
+        ["linkText=Todo App", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//a[contains(text(),'Todo App')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Todo App')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "64810aca-962b-4794-9c2e-e66ec844a13d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Todo App",
+      "targets": [
+        ["linkText=Todo App", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//a[contains(text(),'Todo App')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Todo App')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbaf876b-494e-452d-9984-e47d8d4400e3",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Todo App",
+      "targets": [
+        ["linkText=Todo App", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//a[contains(text(),'Todo App')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Todo App')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fbaee823-5c1d-417c-834a-96026e34e600",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.btn-success",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "2516ba27-0da8-4c5f-8bcb-bee5bb6466ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.disney1:nth-child(1) .btn",
+      "targets": [
+        ["css=.disney1:nth-child(5) .btn", "css:finder"],
+        ["xpath=//li[5]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c254a87-21e0-497f-9436-cbe477e6e538",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "500"
+    }, {
+      "id": "99cf785b-35a6-4273-b73c-e9b936c0666d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "22056d2c-cb36-44ec-925f-19f1b5482cf1",
+    "name": "20_Delete_list_2",
+    "commands": [{
+      "id": "42ae831a-3569-40f5-91e8-13575c2e901b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b92c03a-e030-4325-a33c-e32597b21337",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.btn-success",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "80b3fe66-b1e7-4c8a-aa26-5789bf51624a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=2 List",
+      "targets": [
+        ["linkText=update List", "linkText"],
+        ["css=.disney1:nth-child(1) .ng-binding", "css:finder"],
+        ["xpath=//a[contains(text(),'update List')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#!/list/update')]", "xpath:href"],
+        ["xpath=//li/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'update List')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d9a1a0f-67b9-4481-911f-a3e60af2628b",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.list-group-item:nth-child(1) .btn-danger",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "43e84d08-5102-40d9-b694-342677889fca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-group-item:nth-child(1) .btn-danger",
+      "targets": [
+        ["css=.list-group-item:nth-child(1) .btn-danger", "css:finder"],
+        ["xpath=//div[5]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fce9a8e-a4bb-4485-96b8-797ad2ee0b00",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-group-item:nth-child(1) .btn-danger",
+      "targets": [
+        ["css=.list-group-item:nth-child(1) .btn-danger", "css:finder"],
+        ["xpath=//div[5]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79c51abe-5fe3-4985-9cc0-5d4222894619",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-group-item:nth-child(1) .btn-danger",
+      "targets": [
+        ["css=.list-group-item:nth-child(1) .btn-danger", "css:finder"],
+        ["xpath=//div[5]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5651d74e-42cf-4d11-b102-a3c06c6ab8d7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-group-item:nth-child(1) .btn-danger",
+      "targets": [
+        ["css=.list-group-item:nth-child(1) .btn-danger", "css:finder"],
+        ["xpath=//div[5]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "56ddd39d-7b30-415c-b5e1-b8fccdfb3230",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-group-item:nth-child(1) .btn-danger",
+      "targets": [
+        ["css=.list-group-item:nth-child(1) .btn-danger", "css:finder"],
+        ["xpath=//div[5]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36aa4e56-7f48-44c1-9980-5bb3edede78c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Todo App",
+      "targets": [
+        ["linkText=Todo App", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//a[contains(text(),'Todo App')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Todo App')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "714055c3-d1aa-4e79-ad11-0d8f8256b3ff",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Todo App",
+      "targets": [
+        ["linkText=Todo App", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//a[contains(text(),'Todo App')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Todo App')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c30f776-00d2-40cd-9b3a-b1e0210d0bf3",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Todo App",
+      "targets": [
+        ["linkText=Todo App", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//a[contains(text(),'Todo App')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Todo App')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd94ffd7-0ea7-4930-be47-7fdcff778e0a",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.btn-success",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "9ab942ce-93c7-4c6a-852c-67d49cfb7440",
+      "comment": "",
+      "command": "click",
+      "target": "css=.disney1:nth-child(1) .btn",
+      "targets": [
+        ["css=.disney1:nth-child(5) .btn", "css:finder"],
+        ["xpath=//li[5]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "948337cf-2911-4a34-9ae6-ff3ef43367ed",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "500"
+    }, {
+      "id": "b8dc10f7-5d94-47d2-b848-f3109c53a19f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "362d3b9f-448f-47c7-bcda-ce3224fbd398",
+    "name": "20_Delete_list_3",
+    "commands": [{
+      "id": "55884a89-e9a2-4270-a83f-42961f21f5f5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af7065e4-5970-4649-a5ae-d1a69152a533",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.btn-success",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "8a93897a-7a33-4016-9ca1-205afb37d46d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=3 List",
+      "targets": [
+        ["linkText=update List", "linkText"],
+        ["css=.disney1:nth-child(1) .ng-binding", "css:finder"],
+        ["xpath=//a[contains(text(),'update List')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#!/list/update')]", "xpath:href"],
+        ["xpath=//li/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'update List')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "32299a1f-3f14-499b-9bd5-9d16b4ef3ec5",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.list-group-item:nth-child(1) .btn-danger",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "a0147ada-88b7-48e9-b4d6-5e215b617cf7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-group-item:nth-child(1) .btn-danger",
+      "targets": [
+        ["css=.list-group-item:nth-child(1) .btn-danger", "css:finder"],
+        ["xpath=//div[5]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05715504-e93a-4695-a69e-25583e1d2c05",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-group-item:nth-child(1) .btn-danger",
+      "targets": [
+        ["css=.list-group-item:nth-child(1) .btn-danger", "css:finder"],
+        ["xpath=//div[5]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3292d6a1-1834-43e4-b11f-1d114e8435f7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-group-item:nth-child(1) .btn-danger",
+      "targets": [
+        ["css=.list-group-item:nth-child(1) .btn-danger", "css:finder"],
+        ["xpath=//div[5]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ee20191-5006-4a01-abdb-4c51fdcebcf6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-group-item:nth-child(1) .btn-danger",
+      "targets": [
+        ["css=.list-group-item:nth-child(1) .btn-danger", "css:finder"],
+        ["xpath=//div[5]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "075255d2-dd1b-4be2-bbbe-7effc1569112",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-group-item:nth-child(1) .btn-danger",
+      "targets": [
+        ["css=.list-group-item:nth-child(1) .btn-danger", "css:finder"],
+        ["xpath=//div[5]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e94b721d-1f53-48ac-aa26-9194f3610e28",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Todo App",
+      "targets": [
+        ["linkText=Todo App", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//a[contains(text(),'Todo App')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Todo App')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b02e7e39-94b0-4743-904d-32e76349678e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Todo App",
+      "targets": [
+        ["linkText=Todo App", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//a[contains(text(),'Todo App')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Todo App')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d807ad9-9266-45ec-9276-0b998052b329",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Todo App",
+      "targets": [
+        ["linkText=Todo App", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//a[contains(text(),'Todo App')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Todo App')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e482898-6416-4c99-aeba-6af566160176",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.btn-success",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "81ac476f-0783-4b6c-8e23-89861aa8f1e4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.disney1:nth-child(1) .btn",
+      "targets": [
+        ["css=.disney1:nth-child(5) .btn", "css:finder"],
+        ["xpath=//li[5]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7641cc6-ac19-4de1-9f56-d2d66d435478",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "500"
+    }, {
+      "id": "f53c4647-ec53-4d0c-9145-7249ec38c6b3",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "34e1579e-ec1c-44fa-af0b-57bd7f16d3fc",
+    "name": "20_Delete_list_4",
+    "commands": [{
+      "id": "29862ddb-311d-4cb4-98f8-5927df54c63f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7901edb-b4b8-453f-8167-de32335e453e",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.btn-success",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "a43e302c-12c8-4db2-b762-986bad05966c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=4 List",
+      "targets": [
+        ["linkText=update List", "linkText"],
+        ["css=.disney1:nth-child(1) .ng-binding", "css:finder"],
+        ["xpath=//a[contains(text(),'update List')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#!/list/update')]", "xpath:href"],
+        ["xpath=//li/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'update List')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0335777-de45-468b-8eb1-21d15b4f6644",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.list-group-item:nth-child(1) .btn-danger",
+      "targets": [],
+      "value": "5000"
+    }, {
+      "id": "6898c0c6-a2ce-4d94-8892-42e21e2b24e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-group-item:nth-child(1) .btn-danger",
+      "targets": [
+        ["css=.list-group-item:nth-child(1) .btn-danger", "css:finder"],
+        ["xpath=//div[5]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb260929-be6e-43ce-a6df-a6323c75b4e0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-group-item:nth-child(1) .btn-danger",
+      "targets": [
+        ["css=.list-group-item:nth-child(1) .btn-danger", "css:finder"],
+        ["xpath=//div[5]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e607a65-1f35-44b2-889d-1a9e295c49f5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-group-item:nth-child(1) .btn-danger",
+      "targets": [
+        ["css=.list-group-item:nth-child(1) .btn-danger", "css:finder"],
+        ["xpath=//div[5]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b9217be-28ae-4720-9b43-ffad3d81f215",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-group-item:nth-child(1) .btn-danger",
+      "targets": [
+        ["css=.list-group-item:nth-child(1) .btn-danger", "css:finder"],
+        ["xpath=//div[5]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "266b825e-c9ba-414f-9346-36fcb6eb621c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-group-item:nth-child(1) .btn-danger",
+      "targets": [
+        ["css=.list-group-item:nth-child(1) .btn-danger", "css:finder"],
+        ["xpath=//div[5]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b35cbf0-320a-48eb-8c79-46bce2e060ee",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Todo App",
+      "targets": [
+        ["linkText=Todo App", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//a[contains(text(),'Todo App')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Todo App')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9d62004-7aed-4a53-8909-cf9b4491efdd",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Todo App",
+      "targets": [
+        ["linkText=Todo App", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//a[contains(text(),'Todo App')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Todo App')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "85470eb1-dd1c-4c77-bb62-cc953a27d85a",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Todo App",
+      "targets": [
+        ["linkText=Todo App", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//a[contains(text(),'Todo App')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Todo App')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce585a80-aad6-44ca-afe4-03c3a0a7b1d0",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.btn-success",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "1b6f1235-567a-4316-be56-edb7965b848a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.disney1:nth-child(1) .btn",
+      "targets": [
+        ["css=.disney1:nth-child(5) .btn", "css:finder"],
+        ["xpath=//li[5]/div/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4501810c-1c53-40c4-89a4-2333dede0cab",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "500"
+    }, {
+      "id": "aae2fc7d-d6d5-4640-8e4c-ffb28e1eeb73",
       "comment": "",
       "command": "close",
       "target": "",
