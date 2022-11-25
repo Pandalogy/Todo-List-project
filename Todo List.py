@@ -43,8 +43,10 @@ def checkiflogin():
 					elem = browser.find_element(By.CLASS_NAME,"js-login-field")
 					if elem.is_displayed():
 						WebDriverWait(browser, 4).until(EC.presence_of_element_located((By.CLASS_NAME,"js-login-field")))
+						WebDriverWait(browser, 4).until(EC.visibility_of_element_located((By.CLASS_NAME,"js-login-field")))
 						browser.find_element(By.CLASS_NAME,"js-login-field").send_keys(data[0][9:-1])
-						WebDriverWait(browser, 2).until(EC.presence_of_element_located((By.CLASS_NAME,"js-password-field")))
+						WebDriverWait(browser, 1).until(EC.presence_of_element_located((By.CLASS_NAME,"js-password-field")))
+						WebDriverWait(browser, 1).until(EC.visibility_of_element_located((By.CLASS_NAME,"js-password-field")))
 						browser.find_element(By.CLASS_NAME,"js-password-field").send_keys(data[1][9:-1])
 						browser.find_element(By.CLASS_NAME,"js-sign-in-button").click()
 				except (NoSuchElementException, NoSuchWindowException, WebDriverException, TimeoutException):
@@ -55,11 +57,11 @@ def checkiflogin():
 					elem = browser.find_element(By.CLASS_NAME,"btn-primary")
 					if elem.is_displayed():
 						WebDriverWait(browser, 5).until(EC.visibility_of_element_located((By.CLASS_NAME,"btn-primary")))
-						WebDriverWait(browser, 5).until(EC.element_to_be_clickable((By.CLASS_NAME,"btn-primary")))
+						WebDriverWait(browser, 2).until(EC.element_to_be_clickable((By.CLASS_NAME,"btn-primary")))
 						browser.find_element(By.CLASS_NAME,"btn-primary").click()
 				except (NoSuchElementException, NoSuchWindowException, WebDriverException):
 					pass
-					
+
 			browser.switch_to.window(main_window)
 	except NoSuchElementException:
 		pass
@@ -106,6 +108,7 @@ while count <= 10:
 	enterrandomstring()
 	checkiflogin()
 	count+=1
+	#print("Add "count)
 
 # Logout
 WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR,"button.btn:nth-child(2)")))
@@ -118,12 +121,13 @@ browser.find_element(By.CLASS_NAME,"btn-github").click()
 
 # Delete List 5-10 and all random strings
 count2=10
-while count2 >= 1:
+while count2 >= 5:
 	WebDriverWait(browser, 5).until(EC.element_to_be_clickable((By.XPATH,f"/html/body/ng-view/div/div[3]/div/ul/li[{count2}]/div/div[1]/a")))
 	browser.find_element(By.XPATH,f"/html/body/ng-view/div/div[3]/div/ul/li[{count2}]/div/div[1]/a").click()
 	deleteallrandomstring()
 	checkiflogin()
 	count2 -= 1
+	#print("Remove "count2)
 	
 # Logout
 WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR,"button.btn:nth-child(2)")))
