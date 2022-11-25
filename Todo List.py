@@ -73,6 +73,7 @@ def enterrandomstring():
 	browser.find_element(By.XPATH,"/html/body/ng-view/div/div[2]/div[2]/button").click()
 	browser.find_element(By.XPATH,"/html/body/ng-view/div/div[2]/div[1]/input").send_keys("Ue6J39E07K")
 	browser.find_element(By.XPATH,"/html/body/ng-view/div/div[2]/div[2]/button").click()
+	WebDriverWait(browser, 5).until(EC.element_to_be_clickable((By.XPATH,"/html/body/ng-view/div/nav/div/div/a")))
 	browser.find_element(By.XPATH,"/html/body/ng-view/div/nav/div/div/a").click()
 	
 def deleteallrandomstring():
@@ -87,9 +88,6 @@ def deleteallrandomstring():
 
 # Click sign in github
 checkiflogin()
-
-# Login GitHub via Popup
-#login()
 
 # Add List 1-10 with random strings
 count=1
