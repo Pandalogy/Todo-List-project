@@ -41,21 +41,22 @@ def checkiflogin():
 				try:
 					elem = browser.find_element(By.CLASS_NAME,"js-login-field")
 					if elem.is_displayed():
-						WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.CLASS_NAME,"js-login-field")))
-						browser.find_element(By.CLASS_NAME,"js-login-field").send_keys(f"{data[0][9:-1]}")
-						WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.CLASS_NAME,"js-password-field")))
-						browser.find_element(By.CLASS_NAME,"js-password-field").send_keys(f"{data[1][9:-1]}")
+						WebDriverWait(browser, 4).until(EC.presence_of_element_located((By.CLASS_NAME,"js-login-field")))
+						browser.find_element(By.CLASS_NAME,"js-login-field").send_keys(data[0][9:-1])
+						WebDriverWait(browser, 2).until(EC.presence_of_element_located((By.CLASS_NAME,"js-password-field")))
+						browser.find_element(By.CLASS_NAME,"js-password-field").send_keys(data[1][9:-1])
 						browser.find_element(By.CLASS_NAME,"js-sign-in-button").click()
-						browser.implicitly_wait(2) # seconds
-						#Check if authorize request is required
-						try:
-							elem = browser.find_element(By.CLASS_NAME,"btn-primary")
-							if elem.is_displayed():
-								WebDriverWait(browser, 4).until(EC.element_to_be_clickable((By.CLASS_NAME,"btn-primary")))
-								browser.find_element(By.CLASS_NAME,"btn-primary").click()
-						except (NoSuchElementException, NoSuchWindowException, WebDriverException, TimeoutException):
-							pass
+						
 				except (NoSuchElementException, NoSuchWindowException, WebDriverException, TimeoutException):
+					pass
+				#Check if authorize request is required
+				try:
+					elem = browser.find_element(By.CLASS_NAME,"btn-primary")
+					if elem.is_displayed():
+						WebDriverWait(browser, 5).until(EC.visibility_of_element_located((By.CLASS_NAME,"btn-primary")))
+						WebDriverWait(browser, 5).until(EC.element_to_be_clickable((By.CLASS_NAME,"btn-primary")))
+						browser.find_element(By.CLASS_NAME,"btn-primary").click()
+				except (NoSuchElementException, NoSuchWindowException, WebDriverException):
 					pass
 			browser.switch_to.window(main_window)
 	except NoSuchElementException:
@@ -73,7 +74,8 @@ def enterrandomstring():
 	browser.find_element(By.XPATH,"/html/body/ng-view/div/div[2]/div[2]/button").click()
 	browser.find_element(By.XPATH,"/html/body/ng-view/div/div[2]/div[1]/input").send_keys("Ue6J39E07K")
 	browser.find_element(By.XPATH,"/html/body/ng-view/div/div[2]/div[2]/button").click()
-	WebDriverWait(browser, 5).until(EC.element_to_be_clickable((By.XPATH,"/html/body/ng-view/div/nav/div/div/a")))
+	WebDriverWait(browser, 5).until(EC.visibility_of_element_located((By.XPATH,"/html/body/ng-view/div/nav/div/div/a")))
+	WebDriverWait(browser, 1).until(EC.element_to_be_clickable((By.XPATH,"/html/body/ng-view/div/nav/div/div/a")))
 	browser.find_element(By.XPATH,"/html/body/ng-view/div/nav/div/div/a").click()
 	
 def deleteallrandomstring():
@@ -83,7 +85,8 @@ def deleteallrandomstring():
 			browser.find_element(By.CSS_SELECTOR,"li.list-group-item:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(5) > button:nth-child(1)").click()
 	except NoSuchElementException:
 		pass
-	WebDriverWait(browser, 5).until(EC.element_to_be_clickable((By.XPATH,"/html/body/ng-view/div/nav/div/div/a")))
+	WebDriverWait(browser, 5).until(EC.visibility_of_element_located((By.XPATH,"/html/body/ng-view/div/nav/div/div/a")))
+	WebDriverWait(browser, 1).until(EC.element_to_be_clickable((By.XPATH,"/html/body/ng-view/div/nav/div/div/a")))
 	browser.find_element(By.XPATH,"/html/body/ng-view/div/nav/div/div/a").click()
 
 # Click sign in github
@@ -95,11 +98,13 @@ while count <= 10:
 	WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.CLASS_NAME,"btn-success")))
 	browser.find_element(By.XPATH,"/html/body/ng-view/div/div[2]/div[1]/input").send_keys(f"{count}")
 	browser.find_element(By.CLASS_NAME,"btn-success").click()
-	WebDriverWait(browser, 5).until(EC.element_to_be_clickable((By.XPATH,f"/html/body/ng-view/div/div[3]/div/ul/li[{count}]/div/div[1]/a")))
+	WebDriverWait(browser, 5).until(EC.visibility_of_element_located((By.XPATH,f"/html/body/ng-view/div/div[3]/div/ul/li[{count}]/div/div[1]/a")))
+	WebDriverWait(browser, 2).until(EC.element_to_be_clickable((By.XPATH,f"/html/body/ng-view/div/div[3]/div/ul/li[{count}]/div/div[1]/a")))
 	browser.find_element(By.XPATH,f"/html/body/ng-view/div/div[3]/div/ul/li[{count}]/div/div[1]/a").click()
 	enterrandomstring()
 	checkiflogin()
 	count+=1
+
 # Logout
 WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR,"button.btn:nth-child(2)")))
 browser.find_element(By.CSS_SELECTOR,"button.btn:nth-child(2)").click()
@@ -109,18 +114,15 @@ main_window = browser.window_handles[0]
 WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.CLASS_NAME,"btn-github")))
 browser.find_element(By.CLASS_NAME,"btn-github").click()
 
-# Delete List 5-10 and random strings
-count=10
-while count >= 1:
-	WebDriverWait(browser, 5).until(EC.element_to_be_clickable((By.XPATH,f"/html/body/ng-view/div/div[3]/div/ul/li[{count}]/div/div[1]/a")))
-	browser.find_element(By.XPATH,f"/html/body/ng-view/div/div[3]/div/ul/li[{count}]/div/div[1]/a").click()
+# Delete List 5-10 and all random strings
+count2=10
+while count2 >= 1:
+	WebDriverWait(browser, 5).until(EC.element_to_be_clickable((By.XPATH,f"/html/body/ng-view/div/div[3]/div/ul/li[{count2}]/div/div[1]/a")))
+	browser.find_element(By.XPATH,f"/html/body/ng-view/div/div[3]/div/ul/li[{count2}]/div/div[1]/a").click()
 	deleteallrandomstring()
 	checkiflogin()
-	WebDriverWait(browser, 5).until(EC.element_to_be_clickable((By.XPATH,f"/html/body/ng-view/div/div[3]/div/ul/li[{count}]/div/div[1]/a")))
-	browser.find_element(By.XPATH,f"/html/body/ng-view/div/div[3]/div/ul/li[{count}]/div/div[1]/a").click()
-	count -= 1
-
-
+	count2 -= 1
+	
 # Logout
 WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR,"button.btn:nth-child(2)")))
 browser.find_element(By.CSS_SELECTOR,"button.btn:nth-child(2)").click()
