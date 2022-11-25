@@ -1,6 +1,7 @@
-1. Download Todo List App.side file from Github
-2. Install Selenium IDE for Firefox
-3. Open Selenium IDE for Firefox
-4. Open Todo List App.side Project with Selenium IDE(Ctrl+O)
-5. Note to have Github account already login for Todo List App site
-6. Run all test (Ctrl+Shift+R) for all test cases
+1. Download Todo List.py file from Github
+2. Usernames_Passwords.txt
+3. Install selenium and geckodriver on system
+4. Open Usernames_Passwords.txt and enter Github User and PW, save afterwards
+5. Open Todo List.py with code editor(Sublime Text 4, other editor should be fine)
+6. Build and run code using code editor
+7. Automation script should proceed to run
