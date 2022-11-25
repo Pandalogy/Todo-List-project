@@ -68,6 +68,7 @@ def checkiflogin():
 
 def enterrandomstring():
 	WebDriverWait(browser, 5).until(EC.visibility_of_element_located((By.XPATH,"/html/body/ng-view/div/div[2]/div[1]/input")))
+	WebDriverWait(browser, 1).until(EC.element_to_be_clickable((By.XPATH,"/html/body/ng-view/div/div[2]/div[2]/button")))
 	browser.find_element(By.XPATH,"/html/body/ng-view/div/div[2]/div[1]/input").send_keys("Il24STrhua")
 	browser.find_element(By.XPATH,"/html/body/ng-view/div/div[2]/div[2]/button").click()
 	browser.find_element(By.XPATH,"/html/body/ng-view/div/div[2]/div[1]/input").send_keys("GxKB5fzUQZ")
@@ -108,16 +109,13 @@ while count <= 10:
 	enterrandomstring()
 	checkiflogin()
 	count+=1
-	#print("Add "count)
-
+	
 # Logout
 WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR,"button.btn:nth-child(2)")))
 browser.find_element(By.CSS_SELECTOR,"button.btn:nth-child(2)").click()
 
 # Click sign in github
-main_window = browser.window_handles[0]
-WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.CLASS_NAME,"btn-github")))
-browser.find_element(By.CLASS_NAME,"btn-github").click()
+checkiflogin()
 
 # Delete List 5-10 and all random strings
 count2=10
@@ -126,8 +124,9 @@ while count2 >= 5:
 	browser.find_element(By.XPATH,f"/html/body/ng-view/div/div[3]/div/ul/li[{count2}]/div/div[1]/a").click()
 	deleteallrandomstring()
 	checkiflogin()
+	WebDriverWait(browser, 5).until(EC.element_to_be_clickable((By.XPATH,f"/html/body/ng-view/div/div[3]/div/ul/li[{count2}]/div/div[2]/button")))
+	browser.find_element(By.XPATH,f"/html/body/ng-view/div/div[3]/div/ul/li[{count2}]/div/div[2]/button").click()
 	count2 -= 1
-	#print("Remove "count2)
 	
 # Logout
 WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR,"button.btn:nth-child(2)")))
