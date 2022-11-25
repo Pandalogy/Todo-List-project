@@ -7,6 +7,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import WebDriverException
 from selenium.common.exceptions import NoSuchWindowException
 from selenium.common.exceptions import TimeoutException
+import unittest
 
 with open("Usernames_Passwords.txt", 'r') as f:
      data = f.readlines()
@@ -30,8 +31,7 @@ def checkiflogin():
 				main_window = browser.window_handles[0]
 				login = browser.window_handles[1]
 				browser.switch_to.window(login)
-				WebDriverWait(browser, 5).until(EC.title_is("Sign in to GitHub · GitHub"))
-				
+			
 				#Check for Login and password text box
 				try:
 					elem = browser.find_element(By.CLASS_NAME,"js-login-field")
@@ -57,7 +57,10 @@ def checkiflogin():
 					pass
 
 			browser.switch_to.window(main_window)
-			WebDriverWait(browser, 5).until(EC.title_is("Todo App"))
+			browser.implicitly_wait(2)
+			WebDriverWait(browser, 2).until(EC.title_is("Todo App"))
+			assert len(browser.window_handles) == 1, "Not Yet Login"
+
 	except NoSuchElementException:
 		pass
 
