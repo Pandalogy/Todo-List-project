@@ -36,6 +36,7 @@ def checkiflogin():
 				main_window = browser.window_handles[0]
 				login = browser.window_handles[1]
 				browser.switch_to.window(login)
+				#Check for Login and password text box
 				try:
 					elem = browser.find_element(By.CLASS_NAME,"js-login-field")
 					if elem.is_displayed():
@@ -44,6 +45,7 @@ def checkiflogin():
 						WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.CLASS_NAME,"js-password-field")))
 						browser.find_element(By.CLASS_NAME,"js-password-field").send_keys(f"{data[1][9:-1]}")
 						browser.find_element(By.CLASS_NAME,"js-sign-in-button").click()
+						#Check if authorize request is required
 						try:
 							elem = browser.find_element(By.CLASS_NAME,"btn-primary")
 							if elem.is_displayed():
