@@ -82,6 +82,7 @@ def deleteallrandomstring():
 			browser.find_element(By.CSS_SELECTOR,"li.list-group-item:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(5) > button:nth-child(1)").click()
 	except NoSuchElementException:
 		pass
+	WebDriverWait(browser, 5).until(EC.element_to_be_clickable((By.XPATH,"/html/body/ng-view/div/nav/div/div/a")))
 	browser.find_element(By.XPATH,"/html/body/ng-view/div/nav/div/div/a").click()
 
 # Click sign in github
@@ -101,7 +102,6 @@ while count <= 10:
 	enterrandomstring()
 	checkiflogin()
 	count+=1
-
 # Logout
 WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR,"button.btn:nth-child(2)")))
 browser.find_element(By.CSS_SELECTOR,"button.btn:nth-child(2)").click()
