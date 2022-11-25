@@ -1,7 +1,8 @@
 1. Download Todo List.py file from Github
 2. Usernames_Passwords.txt
-3. Install selenium and geckodriver on system
-4. Open Usernames_Passwords.txt and enter Github User and PW, save afterwards
-5. Open Todo List.py with code editor(Sublime Text 4, other editor should be fine)
-6. Build and run code using code editor
-7. Automation script should proceed to run
+3. Place Usernames_Passwords.txt in same directory as Todo List.py
+4. Install selenium and geckodriver on system
+5. Open Usernames_Passwords.txt and enter Github User and PW, save afterwards
+6. Open Todo List.py with code editor(Sublime Text 4, other editor should be fine)
+7. Build and run code using code editor
+8. Automation script should proceed to run
