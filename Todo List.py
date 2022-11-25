@@ -7,7 +7,6 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import WebDriverException
 from selenium.common.exceptions import NoSuchWindowException
 from selenium.common.exceptions import TimeoutException
-import time 
 
 with open("Usernames_Passwords.txt", 'r') as f:
      data = f.readlines()
@@ -16,13 +15,7 @@ browser = webdriver.Firefox()
 
 # Opening the website
 browser.get('https://todo-list-login.firebaseapp.com/#!')
-if browser.title == "Todo App":
-	print("Browser Title correct")
-
-#assertEqual("Todo App", browser.title):
-#assert "Todo App" in browser.title
-
-
+WebDriverWait(browser, 5).until(EC.title_is("Todo App"))
 WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.CLASS_NAME,"btn-github")))
 
 # Find the if already sign in
@@ -37,7 +30,8 @@ def checkiflogin():
 				main_window = browser.window_handles[0]
 				login = browser.window_handles[1]
 				browser.switch_to.window(login)
-
+				WebDriverWait(browser, 5).until(EC.title_is("Sign in to GitHub · GitHub"))
+				
 				#Check for Login and password text box
 				try:
 					elem = browser.find_element(By.CLASS_NAME,"js-login-field")
@@ -63,6 +57,7 @@ def checkiflogin():
 					pass
 
 			browser.switch_to.window(main_window)
+			WebDriverWait(browser, 5).until(EC.title_is("Todo App"))
 	except NoSuchElementException:
 		pass
 
@@ -82,7 +77,7 @@ def enterrandomstring():
 	WebDriverWait(browser, 5).until(EC.visibility_of_element_located((By.XPATH,"/html/body/ng-view/div/nav/div/div/a")))
 	WebDriverWait(browser, 1).until(EC.element_to_be_clickable((By.XPATH,"/html/body/ng-view/div/nav/div/div/a")))
 	browser.find_element(By.XPATH,"/html/body/ng-view/div/nav/div/div/a").click()
-	
+
 def deleteallrandomstring():
 	WebDriverWait(browser, 5).until(EC.visibility_of_element_located((By.CSS_SELECTOR,"button.btn:nth-child(1)")))
 	try:
