@@ -37,6 +37,7 @@ def checkiflogin():
 				main_window = browser.window_handles[0]
 				login = browser.window_handles[1]
 				browser.switch_to.window(login)
+
 				#Check for Login and password text box
 				try:
 					elem = browser.find_element(By.CLASS_NAME,"js-login-field")
@@ -46,9 +47,9 @@ def checkiflogin():
 						WebDriverWait(browser, 2).until(EC.presence_of_element_located((By.CLASS_NAME,"js-password-field")))
 						browser.find_element(By.CLASS_NAME,"js-password-field").send_keys(data[1][9:-1])
 						browser.find_element(By.CLASS_NAME,"js-sign-in-button").click()
-						
 				except (NoSuchElementException, NoSuchWindowException, WebDriverException, TimeoutException):
 					pass
+
 				#Check if authorize request is required
 				try:
 					elem = browser.find_element(By.CLASS_NAME,"btn-primary")
@@ -58,6 +59,7 @@ def checkiflogin():
 						browser.find_element(By.CLASS_NAME,"btn-primary").click()
 				except (NoSuchElementException, NoSuchWindowException, WebDriverException):
 					pass
+					
 			browser.switch_to.window(main_window)
 	except NoSuchElementException:
 		pass
@@ -127,4 +129,5 @@ while count2 >= 1:
 WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR,"button.btn:nth-child(2)")))
 browser.find_element(By.CSS_SELECTOR,"button.btn:nth-child(2)").click()
 browser.implicitly_wait(4) # seconds
-#browser.quit()
+browser.quit()
+print("Testing completed")
