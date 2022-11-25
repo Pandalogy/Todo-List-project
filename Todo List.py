@@ -6,6 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import WebDriverException
 from selenium.common.exceptions import NoSuchWindowException
+from selenium.common.exceptions import TimeoutException
 import time 
 
 with open("Usernames_Passwords.txt", 'r') as f:
@@ -49,12 +50,12 @@ def checkiflogin():
 						try:
 							elem = browser.find_element(By.CLASS_NAME,"btn-primary")
 							if elem.is_displayed():
-								WebDriverWait(browser, 3).until(EC.element_to_be_clickable((By.CLASS_NAME,"btn-primary")))
+								WebDriverWait(browser, 4).until(EC.element_to_be_clickable((By.CLASS_NAME,"btn-primary")))
 								browser.find_element(By.CLASS_NAME,"btn-primary").click()
 								#break
-						except (NoSuchElementException, NoSuchWindowException, WebDriverException):
+						except (NoSuchElementException, NoSuchWindowException, WebDriverException, TimeoutException):
 							pass
-				except (NoSuchElementException, NoSuchWindowException, WebDriverException):
+				except (NoSuchElementException, NoSuchWindowException, WebDriverException, TimeoutException):
 					pass
 			browser.switch_to.window(main_window)
 	except NoSuchElementException:
@@ -134,7 +135,7 @@ browser.find_element(By.CLASS_NAME,"btn-github").click()
 
 # Delete List 5-10 and random strings
 count=10
-while count >= 5:
+while count >= 1:
 	WebDriverWait(browser, 5).until(EC.element_to_be_clickable((By.XPATH,f"/html/body/ng-view/div/div[3]/div/ul/li[{count}]/div/div[1]/a")))
 	browser.find_element(By.XPATH,f"/html/body/ng-view/div/div[3]/div/ul/li[{count}]/div/div[1]/a").click()
 	deleteallrandomstring()
