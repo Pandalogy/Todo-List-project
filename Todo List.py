@@ -96,7 +96,7 @@ while count <= 10:
 	WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.CLASS_NAME,"btn-success")))
 	browser.find_element(By.XPATH,"/html/body/ng-view/div/div[2]/div[1]/input").send_keys(f"{count}")
 	browser.find_element(By.CLASS_NAME,"btn-success").click()
-	WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.XPATH,f"/html/body/ng-view/div/div[3]/div/ul/li[{count}]/div/div[1]/a")))
+	WebDriverWait(browser, 5).until(EC.element_to_be_clickable((By.XPATH,f"/html/body/ng-view/div/div[3]/div/ul/li[{count}]/div/div[1]/a")))
 	browser.find_element(By.XPATH,f"/html/body/ng-view/div/div[3]/div/ul/li[{count}]/div/div[1]/a").click()
 	enterrandomstring()
 	checkiflogin()
@@ -118,8 +118,8 @@ while count >= 1:
 	browser.find_element(By.XPATH,f"/html/body/ng-view/div/div[3]/div/ul/li[{count}]/div/div[1]/a").click()
 	deleteallrandomstring()
 	checkiflogin()
-	WebDriverWait(browser, 5).until(EC.element_to_be_clickable((CSS_SELECTOR,f"li.disney1:nth-child({count}) > div:nth-child(1) > div:nth-child(2) > button:nth-child(1)")))
-	browser.find_element(By.CSS_SELECTOR,f"li.disney1:nth-child({count}) > div:nth-child(1) > div:nth-child(2) > button:nth-child(1)").click()
+	WebDriverWait(browser, 5).until(EC.element_to_be_clickable((By.XPATH,f"/html/body/ng-view/div/div[3]/div/ul/li[{count}]/div/div[1]/a")))
+	browser.find_element(By.XPATH,f"/html/body/ng-view/div/div[3]/div/ul/li[{count}]/div/div[1]/a").click()
 	count -= 1
 
 
@@ -127,5 +127,4 @@ while count >= 1:
 WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR,"button.btn:nth-child(2)")))
 browser.find_element(By.CSS_SELECTOR,"button.btn:nth-child(2)").click()
 browser.implicitly_wait(4) # seconds
-
 #browser.quit()
