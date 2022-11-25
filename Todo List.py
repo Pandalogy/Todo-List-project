@@ -46,6 +46,7 @@ def checkiflogin():
 						WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.CLASS_NAME,"js-password-field")))
 						browser.find_element(By.CLASS_NAME,"js-password-field").send_keys(f"{data[1][9:-1]}")
 						browser.find_element(By.CLASS_NAME,"js-sign-in-button").click()
+						browser.implicitly_wait(2) # seconds
 						#Check if authorize request is required
 						try:
 							elem = browser.find_element(By.CLASS_NAME,"btn-primary")
@@ -60,28 +61,6 @@ def checkiflogin():
 			browser.switch_to.window(main_window)
 	except NoSuchElementException:
 		pass
-
-def login():
-	if len(browser.window_handles) > 1:
-		main_window = browser.window_handles[0]
-		login = browser.window_handles[1]
-		browser.switch_to.window(login)
-		WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.CLASS_NAME,"js-login-field")))
-		browser.find_element(By.CLASS_NAME,"js-login-field").send_keys("tomthestudent@hotmail.com") #replace Github Account HERE
-		WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.CLASS_NAME,"js-password-field")))
-		browser.find_element(By.CLASS_NAME,"js-password-field").send_keys("x*43vRfP5hQ4Qy$w8jyJP3$RD6A6&M") #replace Github PW HERE
-		browser.find_element(By.CLASS_NAME,"js-sign-in-button").click()
-		browser.implicitly_wait(4) # seconds
-		#While True:
-		try:
-			elem = browser.find_element(By.CLASS_NAME,"btn-primary")
-			if elem.is_displayed():
-				WebDriverWait(browser, 3).until(EC.element_to_be_clickable((By.CLASS_NAME,"btn-primary")))
-				browser.find_element(By.CLASS_NAME,"btn-primary").click()
-				#break
-		except (NoSuchElementException, NoSuchWindowException, WebDriverException):
-			pass
-		browser.switch_to.window(main_window)
 
 def enterrandomstring():
 	WebDriverWait(browser, 5).until(EC.visibility_of_element_located((By.XPATH,"/html/body/ng-view/div/div[2]/div[1]/input")))
