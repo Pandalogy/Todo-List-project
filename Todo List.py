@@ -89,6 +89,10 @@ def deleteallrandomstring():
 	WebDriverWait(browser, 1).until(EC.element_to_be_clickable((By.XPATH,"/html/body/ng-view/div/nav/div/div/a")))
 	browser.find_element(By.XPATH,"/html/body/ng-view/div/nav/div/div/a").click()
 
+def logout():
+	WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR,"button.btn:nth-child(2)")))
+	browser.find_element(By.CSS_SELECTOR,"button.btn:nth-child(2)").click()
+
 # Click sign in github
 checkiflogin()
 
@@ -106,8 +110,7 @@ while count <= 10:
 	count+=1
 	
 # Logout
-WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR,"button.btn:nth-child(2)")))
-browser.find_element(By.CSS_SELECTOR,"button.btn:nth-child(2)").click()
+logout()
 
 # Click sign in github
 checkiflogin()
@@ -124,8 +127,7 @@ while count2 >= 5:
 	count2 -= 1
 	
 # Logout
-WebDriverWait(browser, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR,"button.btn:nth-child(2)")))
-browser.find_element(By.CSS_SELECTOR,"button.btn:nth-child(2)").click()
-browser.implicitly_wait(4) # seconds
+logout()
+browser.implicitly_wait(2) # seconds
 browser.quit()
 print("Testing completed")
