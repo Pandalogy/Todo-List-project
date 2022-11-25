@@ -53,7 +53,6 @@ def checkiflogin():
 							if elem.is_displayed():
 								WebDriverWait(browser, 4).until(EC.element_to_be_clickable((By.CLASS_NAME,"btn-primary")))
 								browser.find_element(By.CLASS_NAME,"btn-primary").click()
-								#break
 						except (NoSuchElementException, NoSuchWindowException, WebDriverException, TimeoutException):
 							pass
 				except (NoSuchElementException, NoSuchWindowException, WebDriverException, TimeoutException):
@@ -119,9 +118,9 @@ while count >= 1:
 	browser.find_element(By.XPATH,f"/html/body/ng-view/div/div[3]/div/ul/li[{count}]/div/div[1]/a").click()
 	deleteallrandomstring()
 	checkiflogin()
-	WebDriverWait(browser, 5).until(EC.visibility_of_element_located((By.XPATH,"/html/body/ng-view/div/div[2]/div[1]/input")))
+	WebDriverWait(browser, 5).until(EC.element_to_be_clickable((CSS_SELECTOR,f"li.disney1:nth-child({count}) > div:nth-child(1) > div:nth-child(2) > button:nth-child(1)")))
 	browser.find_element(By.CSS_SELECTOR,f"li.disney1:nth-child({count}) > div:nth-child(1) > div:nth-child(2) > button:nth-child(1)").click()
-	count-=1
+	count -= 1
 
 
 # Logout
